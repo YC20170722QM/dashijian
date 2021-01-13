@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./lib/jquery.js"></script>
+    <script>
+        $.ajax({
+            url: 'http://www.itcbc.com:8080/my/category/list',
+            success: function (res) {
+                console.log(res)
+            },
+            // 必须加请求头，否则返回身份认证失败
+            headers: {
+                Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYxMDQyMDgyMiwiZXhwIjoxNjEwNDI4MDIyfQ.ec8EIhrWJnUoHTAsgKHsdVsbZm9t7RybboVBFq6ol-Y'
+            }
+        });
+    </script>
+</body>
+</html>

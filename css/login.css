@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #5ea0f1;
+}
+
+#logo {
+    margin: 20px 0 0 240px;
+}
+
+.login {
+    width: 400px;
+    height: 310px;
+    background-color: #f5da78;
+    box-shadow: 5px 5px 5px 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%; /* 针对父元素 */
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 26px;
+}
+
+/* 表单 */
+.layui-form {
+    margin: 0 30px;
+}
+
+.layui-form a {
+    float: right;
+}
+
+/* 图标 */
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    position: absolute;
+    top: 11px;
+    left: 8px;
+}
+
+.layui-input {
+    padding-left: 26px;
+}
